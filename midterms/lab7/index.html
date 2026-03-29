@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #navbar ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #293569;
+        }
+        #navbar li a{
+            display: block;
+            padding: 8px 16px;
+            text-decoration: none;
+            color: black;
+            background-color: aliceblue;
+            text-align: center;
+            margin: 5px;
+            float: left;
+        }
+        #navbar li a:hover{
+            background-color: #1f2b61;
+        }
+        
+        header {
+            background: linear-gradient(170deg, #1f2b61 0%, #6b51a2 100%);
+            clear: both;
+            display: flex;
+            justify-content: center;
+            color: white;
+            height: 100px;
+            padding: 50px;
+            border-radius: 0px;
+            text-align: center;
+        }
+        nav{
+            background: linear-gradient(10deg,#19124a 90%);
+            border-radius: 10px;
+            color: #ffffff;
+             text-align: center;
+        }
+    aside{
+        background-color:rgb(255, 255, 255); 
+        width: 33.3%;
+        float: left;
+    }
+    section{
+        background-color:rgb(255, 255, 255); 
+        width: 33.3%;
+        float: left;
+    
+    }
+    article{
+       background-color:rgb(255, 255, 255); 
+        width: 33.3%;
+        float: left;
+    }
+    footer{
+        background: linear-gradient(170deg, #1f2b61 0%, #6b51a2 100%);
+        clear:both;
+            display: flex;
+            justify-content: center;
+        height: 100px;
+         text-align: center;
+        color: #ffffff;
+        padding: 18px;
+    }   
+    @media screen and (max-width: 800px){
+        aside,
+        section,
+        article{
+            width: 100%;
+            float: none;
+        }
+    }
+    
+
+    </style>
+</head>
+<body>
+<header><h1>this is header</h1></header>
+<nav id="navbar"><ul>
+    <li><a href="Home">HOME</a></li>
+    <li><a href="News">NEWS</a></li>
+    <li><a href="Contact">CONTACT</a></li>
+    <li><a href="About us">ABOUT US</a></li>
+</ul></nav>
+
+
+
+<aside><h3>THIS IS ASIDE</h3>  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste quia quod non dolore incidunt pariatur quam expedita labore dignissimos, harum cumque. Hic, impedit consequuntur praesentium earum maxime sequi! Totam, doloremque?</aside>
+<section><h3>THIS IS SECTION</h3> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus quo eaque nulla repellendus, quisquam minima ab voluptas magnam ducimus maxime! Magnam eum esse deleniti iste distinctio, odio vero unde temporibus.</section>
+<article><H3>THIS IS ARTICLE</H3>  Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum quos qui dolorum hic officia eaque blanditiis quidem possimus excepturi, magni et unde id commodi inventore sint accusamus quibusdam tempore? Nulla.</article>
+
+<footer>THIS IS FOOTER</footer>
+</body>
+</html>     
