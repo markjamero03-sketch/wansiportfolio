@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Flex Layout</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+    background: #f4f4f4;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.header,
+.nav,
+.main,
+.sidebar,
+.footer {
+    padding: 20px;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.header {
+    background: #3498db;
+    width: 100%;
+}
+
+.nav {
+    background: #2ecc71;
+    width: 100%;
+}
+
+.main {
+    background: #e67e22;
+    flex: 3;
+    min-height: 300px;
+}
+
+.sidebar {
+    background: #9b59b6;
+    flex: 1;
+    min-height: 300px;
+}
+
+.footer {
+    background: #34495e;
+    width: 100%;
+}
+
+/* Breakpoint 1: 800px and above */
+@media (min-width: 800px) {
+    .container {
+        flex-direction: row;
+    }
+}
+
+/* Breakpoint 2: 400px and below */
+@media (max-width: 400px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .main,
+    .sidebar {
+        width: 100%;
+    }
+}
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header class="header">Header</header>
+
+        <nav class="nav">Navigation</nav>
+
+        <main class="main">
+            Main Content
+        </main>
+
+        <aside class="sidebar">Sidebar</aside>
+
+        <footer class="footer">Footer</footer>
+    </div>
+
+</body>
+</html>
