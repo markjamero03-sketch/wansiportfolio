@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox task part 2</title>
+
+<style>
+    .container {
+  border: 2px solid black;
+}
+
+header, footer {
+  background: beige;
+  padding: 10px;
+  height: 200px;
+  width: 100%;
+}
+
+.content {
+  display: flex;
+}
+
+.left, .right {
+  background: green;
+  border: 6px solid yellow;
+  padding: 20px;
+  height: 200px;
+}
+
+@media (min-width: 800px) {
+  .left {
+    width: 30%;
+  }
+  .right {
+    width: 70%;
+  }
+}
+
+
+@media (max-width: 400px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .left, .right {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+  <header>This is a Header</header>
+
+  <div class="content">
+    <div class="left">section left nav</div>
+    <div class="right">section right nav</div>
+  </div>
+
+  <footer>This is a Footer</footer>
+
+</body>
+</html>
